@@ -53,7 +53,7 @@
   padding-right: 1em;
 }
 
-.page-links>a:hover {
+.page-links>a:hover, .current-page {
   background: #7affff;
   border-radius: 20px;
   background-clip: margin-box;
@@ -120,11 +120,6 @@ button:focus {
 }
 
 /* INTRO SECTION */
-
-.intro-container-section {
-  width: 100%;
-  /* margin-top: 96px; */
-}
 
 .intro-container {
   width: 100vw;
@@ -224,6 +219,7 @@ button:focus {
 h1 {
   font-family: 'Coiny', cursive;
   font-size: 3em;
+  text-align: center;
 }
 
 h2 {
@@ -263,11 +259,6 @@ h2 {
 }
 
 /* HOUSEPLANT SECTION */
-
-.houseplant-container-section {
-  width: 100%;
-  position: relative;
-}
 
 .houseplant-container {
   margin: 1.25em auto;
@@ -372,12 +363,11 @@ h2 {
   padding-left: 50%;
 }
 
-/* KIT SECTION */
+/* .comic-pop-out-left, .comic-pop-out-right {
+  overflow: hidden;
+} */
 
-.kit-container-section {
-  position: relative;
-  width: 100%;
-}
+/* KIT SECTION */
 
 .kit-container {
   margin: 1.25em auto;
@@ -410,7 +400,11 @@ h2 {
   position: absolute;
   bottom: 7%;
   left: -6em;
-  width: 22em;
+  width: 25em;
+}
+
+.kit-speech {
+  margin-left: 8em;
 }
 
 .flipped {
@@ -493,9 +487,16 @@ h2 {
   margin: 1.25em auto 1.25em auto;
 }
 
+.beige-gradient {
+  background: linear-gradient(180deg, #fff0c4 0%, rgba(255, 240, 196, 0) 100%);
+}
+
+.blue-gradient {
+  background: linear-gradient(180deg, #b0ffff 0%, #deffff 49.17%, #ffffff 100%);
+}
+
 .comic-text-container {
   text-align: center;
-  background: linear-gradient(180deg, #b0ffff 0%, #deffff 49.17%, #ffffff 100%);
   height: 700px;
   margin-bottom: 0.5em;
   display: flex;
@@ -539,7 +540,6 @@ h2 {
 
 .text-button-container {
   text-align: center;
-  background: linear-gradient(180deg, #fff0c4 0%, rgba(255, 240, 196, 0) 100%);
   height: 700px;
   max-height: 700px;
   display: flex;
@@ -567,16 +567,75 @@ h2 {
   padding-right: 1em;
 }
 
+/* CONTACT PAGE STYLING */
+
+.container-section {
+  position: relative;
+  width: 100%;
+}
+
+.contactpage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto 6.25em auto;
+}
+
+.subheader-text {
+  margin-top: 0;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-container-width {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+
+label {
+  padding-left: 3em;
+}
+
+h3 {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+}
+
+input, textarea {
+  background: #FFFAED;
+  border: 3px solid #32A5C9;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 0px #45D2FF;
+  border-radius: 70px;
+  width: 100%;
+  padding: 2em 3em 2em 3em;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+#message-input {
+  height: 40vh;
+}
+
+textarea {
+  vertical-align: top;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 500px) {
   .header {
     align-items: flex-start;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh; */
   }
   .mobile-hamburger-menu {
     padding: 1em;
