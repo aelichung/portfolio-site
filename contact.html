@@ -44,17 +44,28 @@
     <div class="contactpage-container">
       <h1>Contact Me</h1>
       <p class="subheader-text">
-        You can reach me at <u>aelichung@gmail.com</u><br /> or via the forms below.
+        You can reach me at <u>aelichung@gmail.com</u><br /> or by filling out the forms below.
       </p>
-      <div id="from" class="form-container-width">
-        <label for="mail-address"><h3>What's your email address?</h3></label>
-        <input type="text" id="mail-address" name="user-mail" />
-      </div>
-      <div id="message" class="form-container-width">
-        <label for="message-input"><h3>Leave me a message...</h3></label>
-        <textarea id="message-input" name="user-message"></textarea>
-      </div>
-      <button id="send-button" class="CTA">Talk to You Soon!</button>
+      <form method="POST" action="https://formspree.io/aelichung.design@gmail.com">
+        <div class="from-container">
+          <div id="from-name" class="form-container-width">
+            <label for="name"><h3>Name</h3></label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+          </div>
+          <div id="from-email" class="form-container-width">
+            <label for="mail-address"><h3>Email Address</h3></label>
+            <input type="email" id="mail-address" name="email" placeholder="Your email" />
+          </div>
+        </div>
+
+        <div id="message" class="form-container-width">
+          <label for="message-input"><h3>Leave me a message...</h3></label>
+          <textarea id="message-input" name="message" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" id="send-button" class="CTA">Ready to Send?</button>
+        <input type="hidden" name="_next" value="//aelichung.github.io/portfolio-site/thanks.html" />
+      </form>
+
     </div>
   </section>
 
@@ -63,10 +74,10 @@
       <img alt="aec-logo" src="assets/logos/aec_logo.svg" />
     </a>
     <div class="logos-container">
-      <a href="https://github.com/aelichung"><img alt="gh logo" src="assets/logos/gh-logo.png" /></a>
-      <a href="https://www.instagram.com/aelichung/"><img alt="in logo" src="assets/logos/in_logo.png" /></a>
-      <a href="https://twitter.com/aelichung"><img alt="tw logo" src="assets/logos/tw_logo.png" /></a>
-      <a href="https://www.linkedin.com/in/anne-elise-chung-7148b7b5/"><img alt="ln logo" src="assets/logos/ln_logo.png" /></a>
+      <a href="https://github.com/aelichung" target="_blank"><img alt="gh logo" src="assets/logos/gh-logo.png" /></a>
+      <a href="https://www.instagram.com/aelichung/" target="_blank"><img alt="in logo" src="assets/logos/in_logo.png" /></a>
+      <a href="https://twitter.com/aelichung" target="_blank"><img alt="tw logo" src="assets/logos/tw_logo.png" /></a>
+      <a href="https://www.linkedin.com/in/anne-elise-chung-7148b7b5/" target="_blank"><img alt="ln logo" src="assets/logos/ln_logo.png" /></a>
 
     </div>
     <span class="copyright">© 2018 Anne-Elise Chung</span>

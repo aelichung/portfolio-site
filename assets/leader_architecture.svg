@@ -1,0 +1,14 @@
+<svg width="232" height="272" viewBox="0 0 232 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="leader">
+<g id="Ellipse">
+<circle cx="15" cy="15" r="15" transform="translate(0 241.839)" fill="#32A5C9"/>
+<circle cx="15" cy="15" r="13.5" stroke-width="3" transform="translate(0 241.839)" stroke="#FFFAED"/>
+</g>
+<g id="Vector">
+<path d="M 0 254.043L 101.296 29.4436C 109.379 11.5217 127.214 0 146.875 0L 214.075 0" stroke-width="4" stroke-linecap="round" transform="translate(15.4248 2.63477)" stroke="#32A5C9"/>
+</g>
+</g>
+</g>
+</svg>
+
