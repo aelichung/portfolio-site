@@ -581,6 +581,20 @@ h2 {
   width: 100%;
 }
 
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto 6.25em auto;
+}
+
+.first-button {
+  margin-bottom: 4em;
+}
+
 .contactpage-container {
   display: flex;
   flex-direction: column;
