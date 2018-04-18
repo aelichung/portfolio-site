@@ -1,12 +1,12 @@
-<svg width="189" height="102" viewBox="0 0 189 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="169" height="103" viewBox="0 0 169 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="Canvas" fill="none">
 <g id="leader">
 <g id="Ellipse">
-<circle cx="15" cy="15" r="15" transform="translate(188.062 72) scale(-1 1)" fill="#32A5C9"/>
-<circle cx="15" cy="15" r="13.5" stroke-width="3" transform="translate(188.062 72) scale(-1 1)" stroke="#FFFAED"/>
+<circle cx="15" cy="15" r="15" transform="translate(168.062 30.7871) scale(-1)" fill="#32A5C9"/>
+<circle cx="15" cy="15" r="13.5" stroke-width="3" transform="translate(168.062 30.7871) scale(-1)" stroke="#FFFAED"/>
 </g>
 <g id="Vector">
-<path d="M 0 84.4047L 80.5132 12.6684C 89.6713 4.50871 101.509 0 113.775 0L 170.806 0" stroke-width="4" stroke-linecap="round" transform="translate(173.438 2.5957) scale(-1 1)" stroke="#32A5C9"/>
+<path d="M 0 84.4047L 80.5132 12.6684C 89.6713 4.50871 101.509 0 113.775 0L 150.609 0" stroke-width="4" stroke-linecap="round" transform="translate(153.438 100.191) scale(-1)" stroke="#32A5C9"/>
 </g>
 </g>
 </g>
