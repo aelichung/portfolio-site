@@ -100,4 +100,7 @@ $(function() {
         );
     }
   );
+  $('a.blob-gallery').colorbox({
+    rel: 'gal'
+  });
 });
