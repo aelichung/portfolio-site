@@ -49,6 +49,45 @@
   color: #000;
 }
 
+.top-sticky-bar {
+  top: 0;
+  position: fixed !important;
+  z-index: 100;
+  background-color: #fff;
+  opacity: 0.95;
+}
+
+.link-style {
+  font-family: 'Coiny', cursive;
+  font-size: 1.5em;
+  color: #000;
+  margin: auto 0.5em auto 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  height: 2em;
+}
+
+#ux-scroll-link:hover {
+  background-color: #ffe3ec;
+  border-radius: 40px;
+}
+
+#arch-scroll-link:hover {
+  background-color: #cff3ff;
+  border-radius: 40px;
+}
+
+.scroll-active-pink {
+  background-color: #ffe3ec;
+  border-radius: 40px;
+}
+
+.scroll-active-blue {
+  background-color: #cff3ff;
+  border-radius: 40px;
+}
+
 .desktop-links {
   display: flex;
   flex-flow: row wrap;
@@ -57,8 +96,12 @@
 }
 
 .page-links>a {
+  height: 2em;
   padding-left: 1em;
   padding-right: 1em;
+  margin: auto;
+  padding-top: .3em;
+  padding-bottom: auto;
 }
 
 .cyan-bg {
@@ -74,14 +117,14 @@
 }
 
 .current-page {
-  border-radius: 20px;
+  border-radius: 40px;
   background-clip: margin-box;
   transition: background-color 0.8s;
 }
 
 .page-links>a:hover {
   background: #7affff;
-  border-radius: 20px;
+  border-radius: 40px;
   background-clip: margin-box;
   transition: background-color 0.8s;
 }
@@ -467,7 +510,8 @@ h4 {
   height: auto;
   max-width: 1200px;
   max-height: 700px;
-  margin: 1.25 auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .more-work-card {
@@ -811,13 +855,20 @@ textarea {
 
 /* WORK PAGE WORK CONTAINERS */
 
+.workpage-title {
+  margin-bottom: 0;
+}
+
 .flex-row-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90vw;
-  max-width: 1200px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto 2em;
+  padding: 1em;
+  max-height: 200px;
+  width: 100%;
+  position: absolute;
 }
 
 .active-work-bg {
@@ -834,8 +885,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.pink-underline {
-  height: 5px;
+/* .pink-underline {
   border-radius: 4px;
   background-color: #ffe3ec;
   width: 100%;
@@ -846,17 +896,18 @@ textarea {
   border-radius: 4px;
   background-color: #cff3ff;
   width: 100%;
-}
+} */
 
 .work-card-container {
   width: 90vw;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3em;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(590px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 20px;
   justify-items: center;
+  margin-top: 6em;
 }
 
 .work-card-fullwidth {
@@ -889,8 +940,12 @@ textarea {
 }
 
 .work-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  max-height: 590px;
+  max-width: 590px;
+  align-items: center;
 }
 
 .work-card>img {
@@ -906,6 +961,8 @@ textarea {
   grid-template-rows: 1fr;
   max-height: 285px;
   max-width: 590px;
+  align-items: center;
+  width: 100%;
 }
 
 .work-text-container {
@@ -917,7 +974,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   flex: 1 1 590px;
 }
 
@@ -930,8 +987,8 @@ textarea {
 } */
 
 .project-links {
-  margin-top: 1em;
   margin-left: 40px;
+  margin-bottom: 1.5em;
 }
 
 .work-text-spacing {
@@ -941,9 +998,14 @@ textarea {
 }
 
 .work-description-spacing {
-  margin-top: 0.6em;
-  margin-bottom: 0.5em;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 50px;
+}
+
+h4.work-text-spacing {
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
 }
 
 .light-pink-bg {
@@ -954,10 +1016,27 @@ textarea {
   background-color: #cff3ff;
 }
 
+.red-link {
+  color: #cf0057;
+}
+
+.red-link:hover {
+  background: #cf0057;
+  color: #fff;
+}
+
+.blue-link {
+  color: #006ACB;
+}
+
+.blue-link:hover {
+  background: #006ACB;
+  color: #fff;
+}
+
 .proj-link {
   font-family: inherit;
   font-size: 1.25em;
-  color: #cf0057;
   font-weight: 800;
   margin-right: 1.5em;
   padding-left: 10px;
@@ -965,11 +1044,13 @@ textarea {
 }
 
 .proj-link:hover {
-  background: #cf0057;
-  color: #fff;
   border-radius: 20px;
   background-clip: margin-box;
   transition: background-color 0.8s;
+}
+
+.no-display {
+  display: none;
 }
 
 /* MEDIA QUERIES */
