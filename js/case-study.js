@@ -78,6 +78,26 @@ $(function() {
     $brandGallery.eq(0).click();
   });
 
+  $('#moodboard-lb').click(function(e) {
+    e.preventDefault();
+    $brandGallery.eq(0).click();
+  });
+
+  $('#mindmap-lb').click(function(e) {
+    e.preventDefault();
+    $brandGallery.eq(2).click();
+  });
+
+  $('#logo-lb').click(function(e) {
+    e.preventDefault();
+    $brandGallery.eq(3).click();
+  });
+
+  $('#styleguide-lb').click(function(e) {
+    e.preventDefault();
+    $brandGallery.eq(-3).click();
+  });
+
   var $userStoryGallery = $('a.user-story-gallery').colorbox({
     rel: 'user-story-gallery',
     maxWidth: '80%'
