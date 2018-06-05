@@ -1453,6 +1453,18 @@ ol.case-body>li {
   margin-bottom: 0;
 }
 
+.bottom-margin {
+  margin-bottom: 2em !important;
+}
+
+.bar-separator {
+  width: 5px;
+  height: 24px;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
 /* MORE WORK CAROUSEL STYLING */
 
 .more-work-carousel {
@@ -1553,7 +1565,7 @@ a.subheader-text {
   width: 100vw;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: minmax(min-content, 230px) repeat(2, 2fr);
+  grid-template-columns: minmax(min-content, 230px) 2fr;
   grid-template-rows: 1fr;
   grid-gap: 5%;
 }
@@ -1578,6 +1590,30 @@ a.subheader-text {
 .resume-body {
   font-family: inherit;
   font-size: 1.125em;
+}
+
+.resume-body>li {
+  list-style-type: none;
+}
+
+.work-item>.project-info-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.edu-item>.project-info-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.edu-item {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.work-item {
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 /* MEDIA QUERIES */
