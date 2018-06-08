@@ -138,6 +138,42 @@ $(function() {
     $hifiGallery.eq(0).click();
   });
 
+  var $stripGallery = $('a.strip-gallery').colorbox({
+    rel: 'strip-gallery',
+    maxWidth: '100%'
+  });
+
+  $('#strip-video').colorbox({
+    iframe: true,
+    innerWidth: 840,
+    innerHeight: 472.5
+  });
+
+  $('#strip-link').click(function(e) {
+    e.preventDefault();
+    $stripGallery.eq(0).click();
+  });
+
+  var $floGallery = $('a.flo-gallery').colorbox({
+    rel: 'flo-gallery',
+    maxWidth: '100%'
+  });
+
+  $('#flo-link').click(function(e) {
+    e.preventDefault();
+    $floGallery.eq(0).click();
+  });
+
+  var $waterGallery = $('a.water-gallery').colorbox({
+    rel: 'water-gallery',
+    maxWidth: '100%'
+  });
+
+  $('#water-link').click(function(e) {
+    e.preventDefault();
+    $waterGallery.eq(0).click();
+  });
+
   var $furnGallery = $('a.furn-gallery').colorbox({
     rel: 'furn-gallery',
     maxWidth: '100%'
