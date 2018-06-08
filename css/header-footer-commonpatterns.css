@@ -1141,7 +1141,7 @@ h4.work-text-spacing {
 }
 
 .case-card>img, .case-overall-card>img, .icon-iteration-box>img, .overall-iteration-box>img {
-  max-width: 100vw;
+  max-width: 100%;
   object-fit: contain;
 }
 
