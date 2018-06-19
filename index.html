@@ -15,9 +15,10 @@
   <meta name="author" content="Anne-Elise Chung" />
   <meta name="keywords" content="Chung, Anne-Elise, portfolio, UX, UI, design, research, job, designer, researcher, developer, front-end" />
   <meta name="description" content="I am an interaction designer. Welcome to my portfolio." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="/assets/logos/aec_logo.png" />
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/header-footer-commonpatterns.css" type="text/css" />
-  <link rel="stylesheet" href="css/index.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Asap:600|Caveat+Brush|Coiny|Nunito:400,600,700,800" rel="stylesheet">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -76,7 +77,7 @@
       <div class="speech-bubble intro-bubble-position">
         <h1>I'm <span class="nowrap">Anne-Elise.</span></h1>
         <p class="intro-para">
-          <span class="highlight">I design objects, interactions, and environments.</span><br /> Based in the Bay Area, California.<br />I'm a curious learner with a passion for storytelling.
+          <span class="highlight">An interaction designer.</span><br /> Based in the Bay Area, California.<br />I craft, test, and develop experiences.
         </p>
         <div class="speech-bubble-arrow"></div>
       </div>
@@ -115,18 +116,20 @@
       </div>
 
     </div>
-
-    <div class="comic-pop-out-right bottom-right desktop">
-      <div class="hover-show speech-bubble plant-speech">
-        <p class="pop-text">
-          Have you ever wanted to buy a plant, but weren’t sure if it would stay alive?<br /> Houseplant can help.
-        </p>
-        <div class="speech-bubble-arrow"></div>
-      </div>
-      <div class="hp-pop-image-plant">
-        <img alt="comic me with a plant" src="assets/comic-self_hp.svg" />
+    <div class="pop-out-container bottom-right desktop">
+      <div class="comic-pop-out-right">
+        <div class="hover-show speech-bubble plant-speech">
+          <p class="pop-text">
+            Have you ever wanted to buy a plant, but weren’t sure if it would stay alive?<br /> Houseplant can help.
+          </p>
+          <div class="speech-bubble-arrow"></div>
+        </div>
+        <div class="hp-pop-image-plant">
+          <img alt="comic me with a plant" src="assets/comic-self_hp.svg" />
+        </div>
       </div>
     </div>
+
 
   </section>
   <section class="container-section">
@@ -193,6 +196,7 @@
     <div class="text-button-container blue-gradient">
       <h2>Let's get to know <br />each other.</h2>
       <a class="button-link" href="contact.html"><button class="CTA">Say Hello!</button></a>
+
       <div class="icon-text-container">
         <a href="mailto:aelichung@gmail.com">
           <div class="icon mail-icon">
@@ -213,7 +217,8 @@
           Bay Area, California
         </p>
       </div>
-      </d iv>
+
+
   </section>
 
   <section class="footer">

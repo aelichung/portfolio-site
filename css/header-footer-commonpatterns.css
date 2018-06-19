@@ -62,7 +62,7 @@ header {
   margin: auto 0.5em auto 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 0.3em;
+  padding-top: 0.8em;
   height: 2em;
 }
 
@@ -100,8 +100,7 @@ header {
   padding-left: 1em;
   padding-right: 1em;
   margin: auto;
-  padding-top: 0.3em;
-  padding-bottom: auto;
+  padding-top: 0.8em;
 }
 
 .cyan-bg {
@@ -290,6 +289,8 @@ h1 {
   font-family: 'Coiny', cursive;
   font-size: 3em;
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -445,9 +446,8 @@ h6 {
 
 .bottom-right {
   position: absolute;
-  bottom: 5%;
-  right: -2em;
-  width: 20em;
+  bottom: 5vw;
+  right: 0;
 }
 
 .hover-show {
@@ -460,12 +460,26 @@ h6 {
 }
 
 .hp-pop-image-plant {
-  padding-left: 50%;
+  align-self: flex-end;
 }
 
-/* .comic-pop-out-left, .comic-pop-out-right {
+.plant-speech {
+  max-width: 400px;
+}
+
+.pop-out-container {
   overflow: hidden;
-} */
+  width: 600px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comic-pop-out-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
 
 /* KIT SECTION */
 
@@ -609,12 +623,18 @@ h6 {
   padding-bottom: 2em;
 }
 
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
 .icon-text-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0;
   width: 65%;
   padding: 0.5em;
 }
@@ -629,7 +649,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .mail-icon:hover {
@@ -639,12 +659,10 @@ h6 {
 }
 
 .icon-text-container>p, .icon-text-container>a>p {
-  flex-grow: 1;
-  margin: 0 auto;
   font-size: 1.5em;
   font-weight: 600;
   padding: 0.5em;
-  max-width: 240px;
+  width: auto;
 }
 
 .text-button-container {
@@ -1262,7 +1280,10 @@ h4.work-text-spacing {
 }
 
 .survey-header {
+  width: auto;
+  padding-left: 20px;
   margin-bottom: 0.2em;
+  margin-top: 0.75em;
 }
 
 .survey-grid {
@@ -1308,14 +1329,23 @@ a.link {
   max-width: 100vw;
   position: relative;
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-rows: 3fr 285px 1fr;
+}
+
+.overlay-container {
+  max-width: 1200px;
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
+  align-self: end;
+  justify-self: start;
 }
 
 .case-overlay {
   z-index: 10;
   max-width: 590px;
-  position: absolute;
-  top: 40%;
-  left: 20%;
   padding-top: 1em;
   padding-bottom: 2em;
 }
@@ -1336,6 +1366,8 @@ a.link {
   max-width: 100vw;
   object-fit: cover;
   height: 60vh;
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
 }
 
 .review-overlay-caption {
@@ -1834,6 +1866,10 @@ a.subheader-text {
     max-width: 100vw;
     margin: 0 auto 6.25em auto;
   }
+  .case-fullwidth-card {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 720px) {
@@ -2000,4 +2036,8 @@ a.subheader-text {
     position: absolute;
     right: 100%;
   }
+}
+
+@-ms-viewport {
+  width: device-width;
 }
