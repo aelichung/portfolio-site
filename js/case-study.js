@@ -1,4 +1,6 @@
 $(function() {
+  lazyload();
+
   const stickyTopNav = $('.flex-row-container').offset().top;
 
   const stickyNav = function() {
@@ -116,6 +118,16 @@ $(function() {
   $('#flow-link').click(function(e) {
     e.preventDefault();
     $flowGallery.eq(0).click();
+  });
+
+  var $bayGallery = $('a.bay-gallery').colorbox({
+    rel: 'bay-gallery',
+    maxWidth: '100%'
+  });
+
+  $('#baymard-link').click(function(e) {
+    e.preventDefault();
+    $bayGallery.eq(0).click();
   });
 
   var $lofiGallery = $('a.lofi-gallery').colorbox({

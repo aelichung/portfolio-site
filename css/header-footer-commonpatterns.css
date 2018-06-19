@@ -1331,7 +1331,7 @@ a.link {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1200px 1fr;
-  grid-template-rows: 3fr 285px 1fr;
+  grid-template-rows: 4fr 285px 1fr;
 }
 
 .overlay-container {
@@ -1339,7 +1339,16 @@ a.link {
   position: relative;
   grid-column: 2 / 3;
   grid-row: 2 / -1;
-  align-self: end;
+  align-self: start;
+  justify-self: start;
+}
+
+.overlay-container-start {
+  max-width: 1200px;
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
+  align-self: center;
   justify-self: start;
 }
 
@@ -1462,9 +1471,6 @@ ol.case-body>li {
   display: block;
   padding-left: 40px;
   padding-right: 40px;
-  font-weight: 800;
-  text-decoration: underline;
-  font-size: 1.25em;
 }
 
 #styleguide-lb {
