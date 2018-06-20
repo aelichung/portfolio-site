@@ -1,7 +1,13 @@
 $(function() {
   lazyload();
 
+  $('.meatballs').on('click', function() {
+    $('.mobile-case-links').toggleClass('click-show');
+  });
+
   const stickyTopNav = $('.flex-row-container').offset().top;
+
+  const stickyBallsNav = $('.mobile-meatballs-menu').offset().top;
 
   const stickyNav = function() {
     const scrollTop = $(window).scrollTop();
@@ -11,10 +17,21 @@ $(function() {
     );
   };
 
+  const stickyNavMobile = function() {
+    const scrollTop = $(window).scrollTop();
+    $('.mobile-meatballs-menu').toggleClass(
+      'top-sticky-bar',
+      scrollTop > stickyBallsNav
+    );
+  };
+
   stickyNav();
+
+  stickyNavMobile();
 
   $(window).scroll(function() {
     stickyNav();
+    stickyNavMobile();
   });
 
   $.localScroll({
