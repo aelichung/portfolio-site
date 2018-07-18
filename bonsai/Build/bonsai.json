@@ -1,0 +1,13 @@
+{
+"companyName": "Anne-Elise Chung",
+"productName": "Bonsai",
+"dataUrl": "bonsai.data.unityweb",
+"asmCodeUrl": "bonsai.asm.code.unityweb",
+"asmMemoryUrl": "bonsai.asm.memory.unityweb",
+"asmFrameworkUrl": "bonsai.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

@@ -1226,7 +1226,7 @@ h4.work-text-spacing {
   grid-template-rows: repeat(auto-fit, minmax(300px, max-content));
   grid-gap: 10vh 20px;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
   min-width: 0;
 }
 
