@@ -84,7 +84,11 @@
       </div>
     </div>
 
-    <img class="splash lazyload" alt="bonsai animated image" src="cs-assets/bonsai-assets/bonsai-splash.gif" />
+    <video autoplay="autoplay" loop="loop">
+      <source src="cs-assets/bonsai-assets/exploration/bonsai-splash.mp4" type="video/mp4"/>
+      <img class="splash lazyload" alt="bonsai animated image" src="cs-assets/bonsai-assets/bonsai-splash.gif" />
+    </video>
+
 
     <div class="hp-mobile">
       <div class="title-and-roles">
@@ -108,9 +112,21 @@
 
   </section>
 
-  <div class="nav-bar-sidescroll">
-    <a class="product-link link-style" href="#the-product">The Product</a>
-    <a class="journey-link link-style" href="#the-journey">The Journey</a>
+  <div class="case-nav-links flex-row-container desktop">
+    <a id="product-link" class="link-style" href="#the-product">The Product</a>
+    <a id="journey-link" class="link-style" href="#the-journey">The Journey</a>
+  </div>
+
+  <div class="mobile-meatballs-menu mobile">
+    <button class="meatballs">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="circle3"></div>
+  </button>
+    <div class="mobile-case-links click-show">
+      <a id="product-link" class="link-style" href="#the-product">The Product</a>
+      <a id="journey-link" class="link-style" href="#the-journey">The Journey</a>
+    </div>
   </div>
 
   <section class="content">
@@ -120,8 +136,8 @@
         <div class="case-card flex-case-text">
           <h4 class="case-header pink-underline">Sit back and grow.</h4>
           <p class="case-body">
-            Looking for a way to de-stress? Ever wanted your own bonsai tree? Try growing a virtual bonsai tree!<br /><br />Click the ‘Web Demo’ button to try it on your browser.<br /><br />Click the 'Cardboard Demo' to install the app on your android
-            phone.
+            Looking for a way to de-stress? Ever wanted your own bonsai tree? Try growing a virtual bonsai tree!<br /><br />Click the ‘Web Demo’ button to try it on your desktop or laptop browser.<br /><br />Click the 'Cardboard Demo' to install the app
+            on your android phone.
           </p>
 
           <div class="flex-row case-body-link">
@@ -147,7 +163,10 @@
         </div>
 
         <div class="case-card">
-          <img class="lazyload" alt="bonsai growing gif" data-src="cs-assets/bonsai-assets/bonsai-grow.gif" />
+          <video autoplay="autoplay" loop="loop">
+            <source src="cs-assets/bonsai-assets/exploration/bonsai-grow.mp4" type="video/mp4" />
+            <img class="lazyload" alt="bonsai growing gif" data-src="cs-assets/bonsai-assets/bonsai-grow.gif" />
+          </video>
         </div>
 
       </div>
@@ -156,8 +175,13 @@
 
     <!-- THIS IS THE NEXT SIDE SECTION -->
 
+
     <div id="the-journey" class="content-section">
       <div class="two-column-container">
+
+        <div class="quote-container flex-center light-pink-bg">
+          <h5 class="pink-underline-quote">How I made a VR demo in less than 2 weeks.</h5>
+        </div>
 
         <div class="case-card flex-case-text">
           <h4 class="case-header pink-underline">Starting from scratch</h4>
@@ -199,10 +223,17 @@
           </p>
         </div>
 
-        <div class="case-card flex-row">
+        <div id="bonsai-images" class="case-card flex-row">
           <img class="lazyload" alt="books" data-src="cs-assets/bonsai-assets/books.png" />
-          <img class="lazyload" alt="growing cylinder gif" data-src="cs-assets/bonsai-assets/growing-cylinder.gif" />
-          <img id="grow-then-copy-gif" class="lazyload" alt="cylinder grows and copies" data-src="cs-assets/bonsai-assets/bonsai-progress.gif" />
+          <video autoplay="autoplay" loop="loop">
+            <source src="cs-assets/bonsai-assets/exploration/growing-cylinder.mp4" type="video/mp4" />
+            <img class="lazyload" alt="growing cylinder gif" data-src="cs-assets/bonsai-assets/growing-cylinder.gif" />
+          </video>
+          <video id="grow-then-copy" autoplay="autoplay" loop="loop">
+            <source src="cs-assets/bonsai-assets/exploration/bonsai-progress.mp4" type="video/mp4" />
+            <img class="lazyload" alt="cylinder grows and copies" data-src="cs-assets/bonsai-assets/bonsai-progress.gif" />
+          </video>
+
         </div>
 
         <div class="case-card flex-case-text">
@@ -213,51 +244,77 @@
           </p>
         </div>
 
-        <div class=" case-overall-card auto-grid">
+        <div id="bonsai-gif-grid" class="case-overall-card auto-grid">
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/1.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/1.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/1.gif" />
+            </video>
+
             <p>
               Clicking to create copies at an angle.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/2.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/2.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/2.gif" />
+            </video>
             <p>
               Getting more 'branchlike' copies at alternate rotations. Extra branch bug.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/3.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/3.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/3.gif" />
+            </video>
             <p>
               Was able to fix the extra branch! Getting a decent 2D tree now.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/4.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/4.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/4.gif" />
+            </video>
             <p>
               Tree is now growing tall and getting branches at the same time.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/5.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/5.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/5.gif" />
+            </video>
             <p>
               Added a 'drop branch' behavior to branches.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/6.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/6.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/6.gif" />
+            </video>
             <p>
               Added rotate, pause, and reset buttons.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/7.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/7.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/7.gif" />
+            </video>
+
             <p>
               Added more interesting terrain and background models.
             </p>
           </div>
           <div>
-            <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/8.gif" />
+            <video autoplay="autoplay" loop="loop">
+              <source src="cs-assets/bonsai-assets/exploration/8.mp4" type="video/mp4" />
+              <img class="lazyload" alt="gif" data-src="cs-assets/bonsai-assets/exploration/8.gif" />
+            </video>
             <p>
               After receiving feedback, I removed the pause button and edited the 'grow' behavior to only grow when gazing.
             </p>
@@ -333,6 +390,315 @@
     <a class="product-link link-style" href="#the-product">The Product</a>
     <a class="journey-link link-style" href="#the-journey">The Journey</a>
   </div> -->
+  <section class="more-work-carousel">
+    <div class="more-work-icon-container case-flex-column">
+      <a href="../work.html"><img alt="more work" src="cs-assets/more-work-icon.svg" /></a>
+
+      <h4>More Work</h4>
+    </div>
+    <div class="carousel-btn" id="prev">
+      <a href="#"><img alt="Previous" src="cs-assets\more-work-prev.svg" /></a>
+    </div>
+    <div class="work-cards-carousel">
+      <div id="more-work" class="owl-carousel">
+        <!-- <div class="work-card no-display">
+          <img alt="kit image" src="../assets/work-images/kit.png" />
+          <div class="work-text-container light-pink-bg">
+
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">kit</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  UI / BRANDING
+                </p>
+              </div>
+            </div>
+
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                An organization and file storage<br />service for all your project needs.
+              </p>
+            </div>
+            <div class="project-links">
+              <a class="proj-link red-link" href="case-studies/kit.html">MORE INFO</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="work-card">
+          <img class="lazyload" alt="scorebuds image" data-src="../assets/work-images/houseplant.png" />
+          <div class="work-text-container light-pink-bg">
+
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">houseplant</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  RESEARCH / DESIGN / DEVELOP
+                </p>
+              </div>
+            </div>
+
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                An online plant store<br />for people with black thumbs.
+              </p>
+            </div>
+            <div class="project-links">
+              <a class="proj-link red-link" href="case-studies/houseplant.html">MORE INFO</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <img class="lazyload" alt="scorebuds image" data-src="../assets/work-images/scorebuds.png" />
+          <div class="work-text-container light-pink-bg">
+
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">scorebuds</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  DESIGN / DEVELOP
+                </p>
+              </div>
+            </div>
+
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                A web scoreboard for friends to<br />keep track of group goals.
+              </p>
+            </div>
+            <div class="project-links">
+              <!-- <a class="proj-link red-link no-display" href="case-studies/scorebuds.html">MORE INFO</a> -->
+              <a class="proj-link red-link" href="https://scorebuds.anne-elise.me/" target="_blank">PROTOTYPE</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <img class="lazyload" alt="striptease image" src="../assets/work-images/striptease.png" />
+          <div class="work-text-container light-pink-bg">
+
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">striptease</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  UI DESIGN
+                </p>
+              </div>
+            </div>
+
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                Student work from a class of 20<br />shown as one interactive display.
+              </p>
+            </div>
+            <div class="project-links">
+              <a id="strip-link" class="proj-link red-link" href="#">GALLERY</a>
+              <a class="strip-gallery no-display" title="Thesis Show Installation" href="../assets/striptease/jpeg/1.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/2.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/3.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/4.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/5.jpg"></a>
+              <a class="strip-gallery no-display" title="diagram by Ben Pennell" href="../assets/striptease/jpeg/6.jpg"></a>
+              <a class="strip-gallery no-display" title="diagram by Ben Pennell" href="../assets/striptease/jpeg/7.jpg"></a>
+              <a class="strip-gallery no-display" title="custom Leap Motion case" href="../assets/striptease/jpeg/8.jpg"></a>
+              <a class="strip-gallery no-display" title="Leap Motion push to click, diagram Ben Pennell" href="../assets/striptease/jpeg/9.jpg"></a>
+              <a class="strip-gallery no-display" title="Leap Motion pinch to enlarge, diagram, Ben Pennell" href="../assets/striptease/jpeg/10.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/11.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/12.jpg"></a>
+              <a class="strip-gallery no-display" title="Ben Pennell, who got the wheels spinning" href="../assets/striptease/jpeg/13.jpg"></a>
+              <a class="strip-gallery no-display" title="John Dalit(left) Leap Motion and Julien Stockwell(right) front-end" href="../assets/striptease/jpeg/14.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/15.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/16.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/17.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/18.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/19.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/20.jpg"></a>
+              <a class="strip-gallery no-display" title="pink glitch effect to blend student work into one strip" href="../assets/striptease/jpeg/21.jpg"></a>
+              <a class="strip-gallery no-display" href="../assets/striptease/jpeg/22.jpg"></a>
+              <a id="strip-video" class="strip-gallery no-display" href="https://www.youtube.com/embed/j8MizHxy8-4?rel=0"></a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="work-card light-pink-bg">
+          <img alt="blueprint image" src="../assets/work-images/blueprint.png" />
+          <div class="work-text-container">
+
+            <h4 class="work-text-spacing">small<br />business hackathon</h4>
+            <div class="project-links">
+              <a class="proj-link red-link" href="case-studies/hackathon-2017.html">MORE INFO</a>
+            </div>
+          </div>
+        </div> -->
+        <div class="work-card">
+          <img class="lazyload" alt="flotopia image" src="../assets/work-images/flotopia.png" />
+          <div class="work-text-container light-blue-bg">
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">flotopia</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  RESEARCH / WRITING / DESIGN
+                </p>
+              </div>
+            </div>
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                Where users can actively shape and design<br />the architecture around them.
+              </p>
+            </div>
+            <div class="project-links">
+              <a id="flo-link" class="proj-link blue-link" href="#">GALLERY</a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/1.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/2.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/3.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/4.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/5.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/6.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/7.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/8.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/9.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/10.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/11.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/12.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/13.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/14.jpg"></a>
+              <a class="flo-gallery no-display" title="Architectural Thesis" href="../assets/flotopia/jpeg/15.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <img class="lazyload" alt="water image" src="../assets/work-images/water-cali.png" />
+          <div class="work-text-container light-blue-bg">
+            <div class="title-and-roles">
+              <h4 class="work-text-spacing">water in California</h4>
+              <div class="roles-text">
+                <p class="work-text-spacing">
+                  RESEARCH / INFOGRAPHICS
+                </p>
+              </div>
+            </div>
+            <div class="project-info-text">
+              <p class="work-description-spacing">
+                All about water and our <br />relationship with it.
+              </p>
+            </div>
+            <div class="project-links">
+              <a id="water-link" class="proj-link blue-link" href="#">GALLERY</a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/1.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/2.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/3.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/4.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/5.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/6.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/7.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/8.jpg"></a>
+              <a class="water-gallery no-display" title="Group Project with Camille Lo and David Wachtel" href="../assets/water/9.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/1.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/2.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/3.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/4.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/5.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/6.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/7.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/8.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/9.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/10.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/11.jpg"></a>
+              <a class="water-gallery no-display" href="../assets/water/midreview/12.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card light-blue-bg">
+          <img class="lazyload" alt="furniture image" src="../assets/work-images/furniture.png" />
+          <div class="work-text-container">
+            <h4 class="work-text-spacing">furniture design</h4>
+            <div class="project-links">
+              <a class="proj-link blue-link" id="furn-link" href="#">GALLERY</a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch1.jpg"></a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch2.jpg"></a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch3.jpg"></a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch4.jpg"></a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch5.jpg"></a>
+              <a class="furn-gallery no-display" title="Pouch, the chair that you wear" href="../assets/furn/jpeg/pouch6.jpg"></a>
+              <a class="furn-gallery no-display" title="Lighting, designed with Glorimar Santiago" href="../assets/furn/lighting.png"></a>
+              <a class="furn-gallery no-display" title="Modular, Customizable Screen, designed with Glorimar Santiago" href="../assets/furn/screen-stack.gif"></a>
+              <a class="furn-gallery no-display" title="Experimental Ceiling Structure Pieces" href="../assets/furn/dfab1.jpg"></a>
+              <a class="furn-gallery no-display" title="Experimental Ceiling Structure Pieces" href="../assets/furn/dfab2.jpg"></a>
+              <a class="furn-gallery no-display" title="Experimental Ceiling Structure Pieces" href="../assets/furn/dfab3.jpg"></a>
+              <a class="furn-gallery no-display" title="Experimenting with foam and resin" href="../assets/furn/foam1.jpg"></a>
+              <a class="furn-gallery no-display" title="Experimenting with foam and resin" href="../assets/furn/foam2.jpg"></a>
+              <a class="furn-gallery no-display" title="yarn and resin lighting test" href="../assets/furn/wove1.jpg"></a>
+              <a class="furn-gallery no-display" title="fiberglass and resin lighting test" href="../assets/furn/wove2.jpg"></a>
+              <a class="furn-gallery no-display" title="idea for fiberglass composite frame" href="../assets/furn/wove3.jpg"></a>
+              <a class="furn-gallery no-display" title="weaving the shell" href="../assets/furn/wove4.jpg"></a>
+              <a class="furn-gallery no-display" title="finished shell prior to install" href="../assets/furn/wove5.jpg"></a>
+              <a class="furn-gallery no-display" title="installing shell with lights" href="../assets/furn/wove6.jpg"></a>
+              <a class="furn-gallery no-display" title="turned out way too bright" href="../assets/furn/wove7.jpg"></a>
+              <a class="furn-gallery no-display" title="like a UFO" href="../assets/furn/wove8.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card light-blue-bg">
+          <img class="lazyload" alt="blob art image" src="../assets/work-images/blob-art.png" />
+          <div class="work-text-container">
+            <h4 class="work-text-spacing">'blob-me' illustration series</h4>
+            <div class="project-links">
+              <a class="proj-link blue-link" id="blob-link" href="#">GALLERY</a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_anne-elise.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_avocado_chair.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_banana.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_beer.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_cactus_hug-01.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_cake.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_capy_bath.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_chicken-01.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_martini-01.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_musubi.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_plant.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_salmon_nigiri.jpg"></a>
+              <a class="blob-gallery no-display" href="../assets/blobs/jpeg/long_sleep.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card light-blue-bg">
+          <img class="lazyload" alt="comic image" src="../assets/work-images/comic.png" />
+          <div class="work-text-container">
+            <h4 class="work-text-spacing">short comic</h4>
+            <div class="project-links">
+              <a class="proj-link blue-link" id="comic-link" href="#">GALLERY</a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_1.jpg"></a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_2.jpg"></a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_3.jpg"></a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_4.jpg"></a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_5.jpg"></a>
+              <a class="comic-gallery no-display" href="../assets/comic/jpeg/page_6.jpg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-card light-blue-bg">
+          <img class="lazyload" alt="sketch image" src="../assets/work-images/sketch.png" />
+          <div class="work-text-container">
+            <h4 class="work-text-spacing">sketches</h4>
+            <div class="project-links">
+              <a class="proj-link blue-link" id="sketch-link" href="#">GALLERY</a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/sketch2.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/sketch4.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/sketch6.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/sketch7.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/bloom_1.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/bloom_2.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/bloom_3.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/bloom_4.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/scoop.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/dp_1.jpg"></a>
+              <a class="sketch-gallery no-display" href="../assets/sketches/jpeg/dp_2.jpg"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="carousel-btn owl-nav" id="next">
+      <a href="#"><img class="lazyload" alt="Next" src="cs-assets\more-work-next.svg" /></a>
+    </div>
+  </section>
 
   <section class="container-section blue-gradient">
     <div class="bio-contact-container flex-container">

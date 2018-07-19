@@ -97,13 +97,13 @@ header {
 .scroll-active-pink {
   background-color: #ffe3ec;
   border-radius: 40px;
-  transition: background-color 1s;
+  transition: all 1s;
 }
 
 .scroll-active-blue {
   background-color: #cff3ff;
   border-radius: 40px;
-  transition: background-color 1s;
+  transition: all 1s;
 }
 
 .desktop-links {
@@ -1573,11 +1573,12 @@ ol.case-body>li {
   min-width: 0;
 }
 
-.case-nav-links>a {
+.case-nav-links>a, .mobile-case-links>a {
   text-align: center;
+  transition: all 0.5s;
 }
 
-.case-nav-links>a:hover {
+.case-nav-links>a:hover, .mobile-case-links>a:hover {
   background-color: #ffe3ec;
   border-radius: 40px;
 }
@@ -1699,6 +1700,11 @@ ol.case-body>li {
 
 /* RESUME STYLING */
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 a.subheader-text {
   display: block;
   margin: 0 auto;
@@ -1772,24 +1778,11 @@ a.subheader-text {
 
 /* BONSAI STYLING */
 
-.nav-bar-sidescroll {
-  margin: 0 auto 1em;
-  box-sizing: border-box;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-bar-sidescroll>.link-style:hover {
-  border-bottom: 0.25em solid #F24897;
-  margin-bottom: -0.25em;
-}
-
 .content {
   max-width: 100vw;
   max-height: 100%;
   display: flex;
-  overflow: hidden;
+  flex-direction: column;
 }
 
 .content-section {
@@ -1798,7 +1791,7 @@ a.subheader-text {
   margin-bottom: 2em;
 }
 
-.flex-row>img {
+#bonsai-images>video, #bonsai-images>img {
   height: 100%;
   width: 33%;
   object-fit: cover;
@@ -1813,21 +1806,17 @@ a.subheader-text {
   box-sizing: border-box;
 }
 
-.auto-grid>div>img {
+#bonsai-gif-grid>div>video {
   height: 80%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
 
-#grow-then-copy-gif {
+#grow-then-copy {
   margin-left: 1%;
 }
 
 #web-demo-button {
   padding-right: 1em;
-}
-
-#the-journey {
-  display: none;
 }

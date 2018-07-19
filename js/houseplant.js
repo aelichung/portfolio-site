@@ -38,34 +38,34 @@ $(function() {
     offset: -90
   });
 
-  const overviewSectionStart = $('#overview-section-start').offset().top;
-  const researchSectionStart = $('#research-section-start').offset().top - 200;
-  const brandingSectionStart = $('#branding-section-start').offset().top - 200;
-  const processSectionStart = $('#process-section-start').offset().top - 200;
-
-  const activeScrollLink = function() {
-    const scrollTop = $(window).scrollTop();
-    $('#overview-link').toggleClass(
-      'scroll-active-pink',
-      scrollTop < researchSectionStart
-    );
-    $('#research-link').toggleClass(
-      'scroll-active-pink',
-      scrollTop > researchSectionStart && scrollTop < brandingSectionStart
-    );
-    $('#branding-link').toggleClass(
-      'scroll-active-pink',
-      scrollTop > brandingSectionStart && scrollTop < processSectionStart
-    );
-    $('#process-link').toggleClass(
-      'scroll-active-pink',
-      scrollTop > processSectionStart
-    );
-  };
-
-  $(window).scroll(function() {
-    activeScrollLink();
-  });
+  // const overviewSectionStart = $('#overview-section-start').offset().top;
+  // const researchSectionStart = $('#research-section-start').offset().top - 200;
+  // const brandingSectionStart = $('#branding-section-start').offset().top - 200;
+  // const processSectionStart = $('#process-section-start').offset().top - 200;
+  //
+  // const activeScrollLink = function() {
+  //   const scrollTop = $(window).scrollTop();
+  //   $('#overview-link').toggleClass(
+  //     'scroll-active-pink',
+  //     scrollTop < researchSectionStart
+  //   );
+  //   $('#research-link').toggleClass(
+  //     'scroll-active-pink',
+  //     scrollTop > researchSectionStart && scrollTop < brandingSectionStart
+  //   );
+  //   $('#branding-link').toggleClass(
+  //     'scroll-active-pink',
+  //     scrollTop > brandingSectionStart && scrollTop < processSectionStart
+  //   );
+  //   $('#process-link').toggleClass(
+  //     'scroll-active-pink',
+  //     scrollTop > processSectionStart
+  //   );
+  // };
+  //
+  // $(window).scroll(function() {
+  //   activeScrollLink();
+  // });
 
   var $compGallery = $('a.comp-gallery').colorbox({
     rel: 'comp-gallery',
