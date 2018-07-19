@@ -433,6 +433,7 @@ h6 {
   font-weight: 800;
   font-size: 20px;
   margin: 1em auto 1em auto;
+  transition: all 0.5s;
 }
 
 .CTA-white {
@@ -447,6 +448,7 @@ h6 {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
+  transition: all 0.5s;
 }
 
 .CTA:hover {
@@ -1162,12 +1164,12 @@ h4.work-text-spacing {
   margin-right: 1.5em;
   padding-left: 10px;
   padding-right: 10px;
+  transition: all 0.5s;
 }
 
 .proj-link:hover {
   border-radius: 20px;
   background-clip: margin-box;
-  transition: background-color 0.8s;
 }
 
 .no-display {
