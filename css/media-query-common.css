@@ -430,6 +430,9 @@
   .work-card-halfheight>.work-text-container {
     flex: 1 1 16em;
   }
+  .case-fullwidth-card {
+    grid-template-rows: 1fr 2fr 1fr;
+  }
 }
 
 @media (max-width: 800px) {

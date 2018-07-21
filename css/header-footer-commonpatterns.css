@@ -1083,15 +1083,13 @@ textarea {
 
 .work-text-container {
   text-align: left;
-  width: 100%;
-  height: 100%;
   min-width: 0;
+  width: 100%;
   max-width: 590px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  flex: 1 1 auto;
   padding: 1em 10% 1em 10%;
   box-sizing: border-box;
 }
@@ -1386,12 +1384,13 @@ em.case-body-small {
 
 #label-iterations {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .label-iteration-box {
   max-width: 270px;
   min-width: 0;
+  flex: 1;
 }
 
 .overall-iteration-box {
@@ -1689,18 +1688,17 @@ ol.case-body>li {
 }
 
 .owl-item>.work-card {
-  height: 590px;
-  max-width: 590px;
+  height: 100%;
 }
 
 .owl-item>.work-card>.work-text-container {
   max-height: 100%;
-  height: 100%;
 }
 
 .owl-item>.work-card>img {
   width: 100%;
   object-fit: cover;
+  flex: 1;
 }
 
 .work-cards-carousel {
@@ -1726,7 +1724,7 @@ ol.case-body>li {
 .owl-stage {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .owl-dots {
@@ -1857,9 +1855,20 @@ a.subheader-text {
   box-sizing: border-box;
 }
 
+#bonsai-gif-grid {
+  box-sizing: border-box;
+  padding: 0 10% 0 10%;
+}
+
+#bonsai-gif-grid>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 #bonsai-gif-grid>div>video, #bonsai-gif-grid>div>img {
-  height: 80%;
   width: 100%;
+  height: 80%;
   object-fit: fill;
   object-position: 50% 50%;
 }
