@@ -1,51 +1,4 @@
 @media (max-width: 500px) {
-  .header {
-    align-items: center;
-    height: 5em;
-  }
-  .mobile-hamburger-menu {
-    padding: 1em;
-    text-align: right;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .mobile-menu-links {
-    z-index: 99;
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.8em;
-    background-color: #fff;
-    border-radius: 0 0 0 30px;
-    padding-bottom: 1em;
-  }
-  .mobile-case-links {
-    z-index: 99;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    padding: 0.5em 0 1em;
-  }
-  .click-show {
-    display: none;
-  }
-  .aec-logo>img {
-    height: 3em;
-  }
-  .logos-container>a>img {
-    height: 1.5em;
-  }
-  .mobile {
-    display: block;
-  }
-  .desktop {
-    display: none;
-  }
   .speech-bubble {
     grid-row: 1 / -1;
   }
@@ -118,40 +71,6 @@
   .swoopy-arrow-top, .swoopy-arrow-bottom {
     display: none;
   }
-  .work-card-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    width: 100%;
-    min-width: 0;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3em;
-    box-sizing: border-box;
-  }
-  .work-card, .work-card-fullwidth, .work-card-halfheight {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    min-width: 0;
-    height: auto;
-  }
-  .work-card-halfheight {
-    width: 100% !important;
-    max-height: 38em;
-  }
-  .work-card-halfheight>img {
-    width: 100%;
-    height: 50%;
-  }
-  .work-card-halfheight>.work-text-container {
-    flex: 1 1 auto;
-  }
-  .work-card>img, .fullwidth-grid-image {
-    width: 100%;
-    min-width: 0;
-    height: 40vh;
-    object-fit: cover;
-  }
   #overview-section-start {
     margin-top: 2em;
   }
@@ -174,9 +93,6 @@
   }
   .two-column-container-low-top {
     margin-bottom: 2em;
-  }
-  .flex-row-container {
-    position: sticky;
   }
   .project-links {
     display: flex;
@@ -235,7 +151,60 @@
   }
 }
 
+@media (max-width: 580px) {
+  .work-card-container {
+    margin-top: 9em !important;
+  }
+}
+
 @media (max-width: 720px) {
+  .header {
+    align-items: center;
+    height: 5em;
+  }
+  .mobile-hamburger-menu {
+    padding: 1em;
+    text-align: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu-links {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8em;
+    background-color: #fff;
+    border-radius: 0 0 0 30px;
+    padding-bottom: 1em;
+  }
+  .mobile-case-links {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 0.5em 0 1em;
+  }
+  .click-show {
+    display: none;
+  }
+  .aec-logo>img {
+    height: 3em;
+  }
+  .logos-container>a>img {
+    height: 1.5em;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .from-container {
     flex-flow: column;
     align-items: flex-start;
@@ -441,12 +410,85 @@
   }
 }
 
-/* @media (min-width: 1200px) {
-  .case-fullwidth-card, .quote-container {
-    width: 100vw;
-    overflow-x: hidden;
+@media (max-width: 1200px) {
+  .work-card-halfheight {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 0;
+    height: auto;
   }
-} */
+  .work-card-halfheight {
+    width: 100% !important;
+    max-height: 38em;
+  }
+  .work-card-halfheight>img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .work-card-halfheight>.work-text-container {
+    flex: 1 1 16em;
+  }
+}
+
+@media (max-width: 800px) {
+  .work-card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+    box-sizing: border-box;
+  }
+  .work-card-fullwidth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    max-width: 590px;
+    height: 100%;
+  }
+  .fullwidth-grid-image {
+    width: 100%;
+    height: 100%;
+  }
+  .work-card-fullwidth>div>img {
+    min-width: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .work-card-fullwidth>.work-text-container {
+    justify-content: center;
+    height: 50%;
+  }
+}
+
+@media (min-width: 801px) and (max-width:1335px) {
+  .work-card-container {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: repeat(4, 18%) 9% 9%;
+    grid-gap: 10px;
+  }
+  .work-card>img, .work-card-halfheight>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .work-card-fullwidth {
+    grid-template-columns: repeat(2, 1fr) 25% 24%;
+    grid-gap: 10px;
+  }
+  /* .half-images {
+    height: 50% !important;
+  } */
+}
 
 @-ms-viewport {
   width: device-width;
