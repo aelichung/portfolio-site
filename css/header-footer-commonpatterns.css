@@ -1543,7 +1543,8 @@ a.link {
   background: rgba(255, 255, 255, 0.8);
   padding: 1em;
   grid-column: 2 / -1;
-  grid-row: 2 / -1;
+  grid-row: 1/ 2;
+  align-self: end;
 }
 
 .persona-container {

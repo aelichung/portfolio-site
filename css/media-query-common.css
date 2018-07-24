@@ -305,6 +305,9 @@
   #prev, #next {
     margin: 0 1em;
   }
+  .review-overlay-caption {
+    grid-row: 1/ -1;
+  }
 }
 
 @media (min-width: 1021px) and (max-width: 1150px) {
