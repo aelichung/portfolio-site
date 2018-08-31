@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 90vh;
+  width: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.msg {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 2em;
+  color: #000;
+  padding: 3vh 10% 5vh 10%;
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+p {
+  max-width: 1200px;
+}
