@@ -397,6 +397,57 @@ h6 {
   left: -2%;
 }
 
+/* Tangle SECTION */
+.tangle-container{
+  margin: 1.25em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url(../assets/tangle_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* VR AR SECTION */
+.vr-ar-container {
+  margin: 1.25em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url(../assets/vr_ar_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-height: 700px;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.vr-ar-headset{
+  z-index: 2;
+  left: -2%;
+}
+
+.vr-ar-controller{
+  z-index: 2;
+  bottom: -6%;
+  right: -4%;
+}
+
+.vr-ar-wordmark{
+  font-family: 'Coiny', cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 /* HOUSEPLANT SECTION */
 
 .houseplant-container {
@@ -498,7 +549,11 @@ h6 {
 }
 
 .roles-text {
-  font-size: 1em;
+  font-size: 1.2em;
+}
+.roles-text-white {
+  font-size: 1.2em;
+  color: white;
 }
 
 .hp-roles-text {
@@ -512,6 +567,10 @@ h6 {
 
 .project-info-text {
   font-size: 1.5em;
+}
+.project-info-text-white {
+  font-size: 1.5em;
+  color: white;
 }
 
 .hp-project-info-text {
