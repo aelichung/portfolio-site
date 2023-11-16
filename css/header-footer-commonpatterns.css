@@ -1023,6 +1023,10 @@ textarea {
   bottom: 10%;
 }
 
+.bio-bubble-cover-letter p {
+  font-size: 1.2em;
+}
+
 .right-leader {
   z-index: 1;
   position: absolute;
