@@ -823,6 +823,18 @@ h6 {
   margin: 0 auto;
 }
 
+.footer-short {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  bottom: 0;
+  position: absolute;
+}
+
 .copyright {
   font-size: 1em;
   padding-left: 1em;
@@ -970,7 +982,7 @@ textarea {
   text-align: center;
   padding: 1em 2em 1em 2.5em;
   border: 3px solid #32a5c9;
-  box-sizing: border-box;
+  box-sizing: border -box;
   box-shadow: 5px 5px 0px #45d2ff;
   border-radius: 70px;
   -webkit-border-radius: 70px;
@@ -978,6 +990,36 @@ textarea {
   width: 90vw;
   max-width: 360px;
   text-align: left;
+}
+
+.bio-bubble-cover-letter {
+  z-index: 1;
+  position: relative;
+  background: #fffaed;
+  border-radius: 70px;
+  text-align: center;
+  padding: 3em 3em 3em 3em;
+  border: 3px solid #32a5c9;
+  box-sizing: border -box;
+  box-shadow: 5px 5px 0px #45d2ff;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  width: 60vw;
+  max-width: 800px;
+  text-align: left;
+  margin: auto;
+}
+
+.top-right-cupid{
+  position: absolute;
+  right: -27.5%;
+}
+
+.bottom-left-cupid{
+  position: absolute;
+  left: -30%;
+  bottom: 10%;
 }
 
 .right-leader {
