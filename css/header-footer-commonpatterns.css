@@ -1006,19 +1006,20 @@ textarea {
   -webkit-border-radius: 70px;
   -moz-border-radius: 70px;
   width: 60vw;
-  max-width: 800px;
+  max-width: 600px;
   text-align: left;
   margin: auto;
+  margin-bottom: 4%;
 }
 
 .top-right-cupid{
   position: absolute;
-  right: -27.5%;
+  right: -35.5%;
 }
 
 .bottom-left-cupid{
   position: absolute;
-  left: -30%;
+  left: -38.8%;
   bottom: 10%;
 }
 
